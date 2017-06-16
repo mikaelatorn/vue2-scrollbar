@@ -4,7 +4,7 @@
     @click="calculateSize"
     :class="'vue-scrollbar__wrapper' + ( this.classes ? ' ' + this.classes : '' )"
     ref="scrollWrapper"
-    :style="this.styles">
+    :styles="this.styles">
 
     <div
       :class="'vue-scrollbar__area' + ( this.dragging ? ' ' : ' vue-scrollbar-transition')"
@@ -13,7 +13,7 @@
       @touchstart="startDrag"
       @touchmove="onDrag"
       @touchend="stopDrag"
-      :style="{
+      :styles="{
         marginTop: this.top * -1 +'px',
         marginLeft: this.left * -1 +'px'
       }">
