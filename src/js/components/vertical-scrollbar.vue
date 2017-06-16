@@ -12,7 +12,7 @@
         ref="scrollbar"
         @touchstart="startDrag"
         @mousedown="startDrag "
-        :styles="{
+        :style="{
           height: height+'%',
           top: scrolling + '%'
         }">

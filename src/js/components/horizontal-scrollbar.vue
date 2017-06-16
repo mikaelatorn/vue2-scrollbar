@@ -12,7 +12,7 @@
         ref="scrollbar"
         @touchstart="startDrag"
         @mousedown="startDrag"
-        :styles="{
+        :style="{
           width: this.width+'%',
           left: this.scrolling + '%'
         }" >
